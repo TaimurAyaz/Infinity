@@ -16,7 +16,7 @@ enum PhotoSize {
     
     /// Method to get the sizeId for the given `PhotoSizeVariant`
     ///
-    /// - parameter variant: The photo size variant to get the sizeI for.
+    /// - parameter variant: The photo size variant to get the sizeId for.
     ///
     /// - returns: An integer value representing the sizeId for the size.
     func sizeIdForVariant(variant: PhotoSizeVariant) -> Int {
