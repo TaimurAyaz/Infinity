@@ -1,4 +1,6 @@
-# Infinity - 500px photos client
+![Infinity](https://github.com/TaimurAyaz/Infinity/blob/master/Repo_image.jpg)
+
+### Infinity is a `500px` popular photos client.
 
 ### Prerequisites:
 * XCode 8+
