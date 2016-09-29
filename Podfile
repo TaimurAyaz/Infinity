@@ -9,12 +9,13 @@ target 'Infinity' do
 
   target 'InfinityTests' do
     inherit! :search_paths
-    pod 'Quick'
-    pod 'Nimble'
+    pod 'Quick', '~> 0.9.3'
+    pod 'Nimble', '~> 4.1.0'
   end
 
 end
 
+# Set swift version to 2.3
 post_install do |installer|
     installer.pods_project.targets.each do |target|
         target.build_configurations.each do |config|

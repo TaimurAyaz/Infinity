@@ -5,25 +5,25 @@ PODS:
   - AlamofireObjectMapper (3.0.2):
     - Alamofire (~> 3.2)
     - ObjectMapper (~> 1.0)
-  - Nimble (5.0.0)
+  - Nimble (4.1.0)
   - ObjectMapper (1.4.0)
-  - Quick (0.10.0)
+  - Quick (0.9.3)
 
 DEPENDENCIES:
   - Alamofire (~> 3.5.0)
   - AlamofireImage (~> 2.5.0)
   - AlamofireObjectMapper (~> 3.0.2)
-  - Nimble
+  - Nimble (~> 4.1.0)
   - Quick
 
 SPEC CHECKSUMS:
   Alamofire: b70a7352335f8ea5babd0a923eb7e8eacc67b877
   AlamofireImage: 2d34936e5201270bb17a316a786e90e83b4a249d
   AlamofireObjectMapper: 70f97cbf45c01c48d26aa07a1a7059a60ed7411d
-  Nimble: 56fc9f5020effa2206de22c3dd910f4fb011b92f
+  Nimble: 97a0a4cae5124c117115634b2d055d8c97d0af19
   ObjectMapper: a07ad0462c5adf014adc0f89ef04c29b626e855e
-  Quick: 5d290df1c69d5ee2f0729956dcf0fd9a30447eaa
+  Quick: 13a2a2b19a5d8e3ed4fd0c36ee46597fd77ebf71
 
-PODFILE CHECKSUM: 6ec848da826270820b51301f8c416dbeb2fcdb50
+PODFILE CHECKSUM: 59bea34f8ab98a93398bf8877cd8a645d3583b93
 
 COCOAPODS: 1.0.1

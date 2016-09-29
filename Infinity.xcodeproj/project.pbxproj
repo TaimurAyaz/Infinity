@@ -12,7 +12,6 @@
 		B53431E31D961A3F00A8135D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53431E11D961A3F00A8135D /* Main.storyboard */; };
 		B53431E51D961A3F00A8135D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B53431E41D961A3F00A8135D /* Assets.xcassets */; };
 		B53431E81D961A3F00A8135D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53431E61D961A3F00A8135D /* LaunchScreen.storyboard */; };
-		B53431F31D961A3F00A8135D /* InfinityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53431F21D961A3F00A8135D /* InfinityTests.swift */; };
 		B53432061D961DC200A8135D /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53432041D961DC200A8135D /* GalleryViewController.swift */; };
 		B53432091D961E2000A8135D /* CollectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53432081D961E2000A8135D /* CollectionManager.swift */; };
 		B534320B1D961EA900A8135D /* GalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B534320A1D961EA900A8135D /* GalleryCell.swift */; };
@@ -28,6 +27,7 @@
 		B534324A1D98719E00A8135D /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53432491D98719E00A8135D /* PhotoViewController.swift */; };
 		B53432501D98CA1F00A8135D /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B534324F1D98CA1F00A8135D /* PhotoCell.swift */; };
 		B5656AB91D9A19D4001A8CDE /* PhotoSizeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5656AB81D9A19D4001A8CDE /* PhotoSizeManager.swift */; };
+		B5A546BE1D9D940F0071BEB9 /* GalleryLayoutSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A546BD1D9D940F0071BEB9 /* GalleryLayoutSpec.swift */; };
 		B5ACCAAE1D9AEFF70038F799 /* ImageContaining.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ACCAAD1D9AEFF70038F799 /* ImageContaining.swift */; };
 		B5ACCAB01D9AF01F0038F799 /* PhotoCellSelecting.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ACCAAF1D9AF01F0038F799 /* PhotoCellSelecting.swift */; };
 		B5ACCAB21D9AFF3D0038F799 /* PhotoPresentedAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ACCAB11D9AFF3D0038F799 /* PhotoPresentedAnimationController.swift */; };
@@ -38,6 +38,7 @@
 		B5DCEA381D9B368800041F74 /* IntroTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCEA371D9B368800041F74 /* IntroTableViewController.swift */; };
 		B5DCEA3B1D9B60B200041F74 /* PhotoViewControllerParentUpdating.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCEA3A1D9B60B200041F74 /* PhotoViewControllerParentUpdating.swift */; };
 		B5DCEA3D1D9D772F00041F74 /* UIEdgeInsetsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCEA3C1D9D772F00041F74 /* UIEdgeInsetsExtension.swift */; };
+		B5DCEA401D9D8B9400041F74 /* ToDictionarySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCEA3F1D9D8B9400041F74 /* ToDictionarySpec.swift */; };
 		F90A8824BB53035A32F66BD7 /* Pods_Infinity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9FA07645AA6612FE79C2BE0 /* Pods_Infinity.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,7 +63,6 @@
 		B53431E71D961A3F00A8135D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B53431E91D961A3F00A8135D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B53431EE1D961A3F00A8135D /* InfinityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InfinityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B53431F21D961A3F00A8135D /* InfinityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfinityTests.swift; sourceTree = "<group>"; };
 		B53431F41D961A3F00A8135D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B53432041D961DC200A8135D /* GalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		B53432081D961E2000A8135D /* CollectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionManager.swift; sourceTree = "<group>"; };
@@ -80,6 +80,7 @@
 		B53432491D98719E00A8135D /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		B534324F1D98CA1F00A8135D /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		B5656AB81D9A19D4001A8CDE /* PhotoSizeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoSizeManager.swift; sourceTree = "<group>"; };
+		B5A546BD1D9D940F0071BEB9 /* GalleryLayoutSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryLayoutSpec.swift; sourceTree = "<group>"; };
 		B5ACCAAD1D9AEFF70038F799 /* ImageContaining.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageContaining.swift; sourceTree = "<group>"; };
 		B5ACCAAF1D9AF01F0038F799 /* PhotoCellSelecting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCellSelecting.swift; sourceTree = "<group>"; };
 		B5ACCAB11D9AFF3D0038F799 /* PhotoPresentedAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoPresentedAnimationController.swift; sourceTree = "<group>"; };
@@ -90,6 +91,8 @@
 		B5DCEA371D9B368800041F74 /* IntroTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroTableViewController.swift; sourceTree = "<group>"; };
 		B5DCEA3A1D9B60B200041F74 /* PhotoViewControllerParentUpdating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewControllerParentUpdating.swift; sourceTree = "<group>"; };
 		B5DCEA3C1D9D772F00041F74 /* UIEdgeInsetsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIEdgeInsetsExtension.swift; sourceTree = "<group>"; };
+		B5DCEA3E1D9D8B9400041F74 /* InfinityTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "InfinityTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		B5DCEA3F1D9D8B9400041F74 /* ToDictionarySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDictionarySpec.swift; sourceTree = "<group>"; };
 		BED0D87E8ED2C9813E7DF7FC /* Pods-Infinity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infinity.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Infinity/Pods-Infinity.debug.xcconfig"; sourceTree = "<group>"; };
 		D9FA07645AA6612FE79C2BE0 /* Pods_Infinity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Infinity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA20C764AF2B2E5D0D50422B /* Pods_InfinityTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InfinityTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -175,8 +178,10 @@
 		B53431F11D961A3F00A8135D /* InfinityTests */ = {
 			isa = PBXGroup;
 			children = (
-				B53431F21D961A3F00A8135D /* InfinityTests.swift */,
 				B53431F41D961A3F00A8135D /* Info.plist */,
+				B5DCEA3F1D9D8B9400041F74 /* ToDictionarySpec.swift */,
+				B5A546BD1D9D940F0071BEB9 /* GalleryLayoutSpec.swift */,
+				B5DCEA3E1D9D8B9400041F74 /* InfinityTests-Bridging-Header.h */,
 			);
 			path = InfinityTests;
 			sourceTree = "<group>";
@@ -385,6 +390,7 @@
 					B53431ED1D961A3F00A8135D = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 286NEJQH3X;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						TestTargetID = B53431D91D961A3F00A8135D;
 					};
@@ -560,7 +566,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B53431F31D961A3F00A8135D /* InfinityTests.swift in Sources */,
+				B5DCEA401D9D8B9400041F74 /* ToDictionarySpec.swift in Sources */,
+				B5A546BE1D9D940F0071BEB9 /* GalleryLayoutSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -641,6 +648,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -684,6 +692,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -730,12 +739,15 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 286NEJQH3X;
 				INFOPLIST_FILE = InfinityTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TaimurAyaz.InfinityTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_OBJC_BRIDGING_HEADER = "InfinityTests/InfinityTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Infinity.app/Infinity";
 			};
 			name = Debug;
@@ -746,12 +758,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 286NEJQH3X;
 				INFOPLIST_FILE = InfinityTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TaimurAyaz.InfinityTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_OBJC_BRIDGING_HEADER = "InfinityTests/InfinityTests-Bridging-Header.h";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Infinity.app/Infinity";
 			};
 			name = Release;
