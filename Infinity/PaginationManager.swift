@@ -9,17 +9,28 @@
 import Foundation
 import UIKit
 
+// Alias for the pagination manager reset block.
 typealias PaginationManagerResetBlock = (shouldReset: Bool) -> ()
 
+/// The pagination manager delegate.
 protocol PaginationManagerDelegate: class {
+    
+    
+    /// Tells the conforming object that the pagination manager has exceeded the given threshold.
+    ///
+    /// - parameter manager:   The pagination manager.
+    /// - parameter threshold: The threshold that was exceeded.
+    /// - parameter reset:     The reset block for the pagination manager. Used to tell the pagination manager to reset its state.
     func paginationManagerDidExceedThreshold(manager: PaginationManager, threshold: CGFloat, reset: PaginationManagerResetBlock)
 }
 
+/// Private enum defining the possible states of the pagination manager.
 private enum PaginationManagerState {
     case normal
     case exceeded
 }
 
+/// The scroll direction for the pagination manager
 enum PaginationManagerDirection {
     case horizontal
     case vertical
@@ -27,8 +38,10 @@ enum PaginationManagerDirection {
 
 class PaginationManager: NSObject {
     
+    // Weak reference to the pagination manager delegate
     weak var delegate: PaginationManagerDelegate?
     
+    // The percentage scrolled by the user. The main logic for the pagination manager resides in the `didSet` block.
     private(set) var percentageScrolled: CGFloat = 0 {
         didSet {
             if percentageScrolled > thresholdPercentage && state != .exceeded {
@@ -41,15 +54,28 @@ class PaginationManager: NSObject {
             }
         }
     }
+    // The default threshold percentage for the pagination manager.
     var thresholdPercentage: CGFloat = 0.6
+    
+    // The default direction for the pagination manager. Overridable in the initializer.
     private(set) var direction: PaginationManagerDirection = .vertical
 
-    
+    // The default state of the pagination manager.
     private var state: PaginationManagerState = .normal
     
+    // Weak reference to the collection view.
     private weak var collectionView: UICollectionView?
+    
+    // Weak reference to the original delegate of the collection view.
     private weak var originalDelegate: UICollectionViewDelegate?
 
+    
+    /// Designated initializer for the pagination manager.
+    ///
+    /// - parameter collectionView: The collection view to be associated with the apgination manager
+    /// - parameter direction:      The scroll direction of the collection view.
+    ///
+    /// - returns: A newly created pagnination manager.
     init(collectionView: UICollectionView, direction: PaginationManagerDirection) {
         self.collectionView = collectionView
         self.originalDelegate = collectionView.delegate
@@ -60,6 +86,8 @@ class PaginationManager: NSObject {
 }
 
 extension PaginationManager: UICollectionViewDelegate {
+    
+    // Hook into the scrollview delegate method to compute the percentage scrolled.
     func scrollViewDidScroll(scrollView: UIScrollView) {
         originalDelegate?.scrollViewDidScroll?(scrollView)
         
@@ -86,6 +114,8 @@ extension PaginationManager: UICollectionViewDelegate {
             self.percentageScrolled = percentageScrolled
         }
     }
+    
+    // Pass unsed delegate methods back to the original delegate.
     
     override func respondsToSelector(aSelector: Selector) -> Bool {
         if let delegateResponds = self.originalDelegate?.respondsToSelector(aSelector) where delegateResponds == true {

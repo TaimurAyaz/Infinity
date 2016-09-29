@@ -37,6 +37,7 @@
 		B5C813391D99A12E00220207 /* PhotoPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C813381D99A12E00220207 /* PhotoPresentationController.swift */; };
 		B5DCEA381D9B368800041F74 /* IntroTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCEA371D9B368800041F74 /* IntroTableViewController.swift */; };
 		B5DCEA3B1D9B60B200041F74 /* PhotoViewControllerParentUpdating.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCEA3A1D9B60B200041F74 /* PhotoViewControllerParentUpdating.swift */; };
+		B5DCEA3D1D9D772F00041F74 /* UIEdgeInsetsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCEA3C1D9D772F00041F74 /* UIEdgeInsetsExtension.swift */; };
 		F90A8824BB53035A32F66BD7 /* Pods_Infinity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9FA07645AA6612FE79C2BE0 /* Pods_Infinity.framework */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +89,7 @@
 		B5C813381D99A12E00220207 /* PhotoPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoPresentationController.swift; sourceTree = "<group>"; };
 		B5DCEA371D9B368800041F74 /* IntroTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroTableViewController.swift; sourceTree = "<group>"; };
 		B5DCEA3A1D9B60B200041F74 /* PhotoViewControllerParentUpdating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewControllerParentUpdating.swift; sourceTree = "<group>"; };
+		B5DCEA3C1D9D772F00041F74 /* UIEdgeInsetsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIEdgeInsetsExtension.swift; sourceTree = "<group>"; };
 		BED0D87E8ED2C9813E7DF7FC /* Pods-Infinity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infinity.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Infinity/Pods-Infinity.debug.xcconfig"; sourceTree = "<group>"; };
 		D9FA07645AA6612FE79C2BE0 /* Pods_Infinity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Infinity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA20C764AF2B2E5D0D50422B /* Pods_InfinityTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InfinityTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -267,6 +269,7 @@
 			isa = PBXGroup;
 			children = (
 				B53432201D9715B500A8135D /* ToDictionary.swift */,
+				B5DCEA3C1D9D772F00041F74 /* UIEdgeInsetsExtension.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -544,6 +547,7 @@
 				B53432091D961E2000A8135D /* CollectionManager.swift in Sources */,
 				B53432211D9715B500A8135D /* ToDictionary.swift in Sources */,
 				B53432251D97234700A8135D /* EndPoint.swift in Sources */,
+				B5DCEA3D1D9D772F00041F74 /* UIEdgeInsetsExtension.swift in Sources */,
 				B53431DE1D961A3F00A8135D /* AppDelegate.swift in Sources */,
 				B5DCEA381D9B368800041F74 /* IntroTableViewController.swift in Sources */,
 				B53432131D964E2B00A8135D /* DataKit.swift in Sources */,
