@@ -6,3 +6,6 @@
 
 ### Setup:
 The project depends on some pods, which are included in the repo. If for some reason, a `build/run` from `XCode` does not work, try `pod install` on the home directory.
+
+### Testing:
+Testing is based on `Quick` testing framework. Testing directly from `XCode` should work fine.
