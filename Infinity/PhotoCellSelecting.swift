@@ -8,6 +8,12 @@
 
 import Foundation
 
+/// A protocol providing selection methods for acting on cell selection.
 @objc protocol PhotoCellSelecting {
+    
+    
+    /// Informs the conforming object when the cell is selected.
+    ///
+    /// - parameter indexPath: The indexPath of the selected cell.
     func didSelectPhoto(atIndexPath indexPath: NSIndexPath)
 }

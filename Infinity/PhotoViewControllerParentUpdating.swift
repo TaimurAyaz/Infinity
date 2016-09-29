@@ -8,7 +8,12 @@
 
 import Foundation
 
+// Protocol to update the parent/presenter of the photo previewing controller
 protocol PhotoViewControllerParentUpdating: class {
+    
+    // Informs when the `PhotoViewController` scrolls to an item.
     func photoViewController(photoViewController: PhotoViewController, didScrollToItemAtIndex index: Int)
+    
+    // Informs when the `PhotoViewController` is about to dismiss.
     func photoViewController(photoViewController: PhotoViewController, willDismissFromItemAtIndex index: Int)
 }

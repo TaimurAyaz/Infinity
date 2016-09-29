@@ -10,18 +10,19 @@ import Foundation
 import ObjectMapper
 
 
+/// A model containing the image properties
 class ImageProperty: Mappable {
-    var url: String?
-    var size: Int?
-    var format: String?
     
-    required init?(_ map: Map){
-        
-    }
+    // The url of the image
+    private(set) var url: String?
+    
+    // The size id of the image
+    private(set) var sizeId: Int?
+    
+    required init?(_ map: Map) { }
     
     func mapping(map: Map) {
         url <- map["https_url"]
-        size <- map["size"]
-        format <- map["format"]
+        sizeId <- map["size"]
     }
 }

@@ -9,8 +9,9 @@
 import Foundation
 import UIKit
 
+/// The dismissal animator for dismissing `PhotoViewController`
 class PhotoDismissedAnimationController: PhotoPresentedAnimationController {
-    
+   
     override func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
         UIView.animateWithDuration(transitionDuration(transitionContext), animations: {}, completion: { finished in
             transitionContext.completeTransition(!transitionContext.transitionWasCancelled())

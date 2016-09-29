@@ -9,6 +9,7 @@
 import UIKit
 import AVFoundation
 
+/// The presentation controller for the presenting `PhotoViewController`.
 class PhotoPresentationController: UIPresentationController {
 
     let dimmingView: UIView = {
@@ -88,13 +89,14 @@ class PhotoPresentationController: UIPresentationController {
     
     private func configureImageViewForCurrentSize() {
         if let photo = photoPresenting?.photoForPresentedItem {
+           
             var sizeId: Int = PhotoSizeManager.shared.currentSize.sizeIdForVariant(.normal)
             if PhotoSizeManager.shared.currentSize == .cropped {
                 sizeId = PhotoSizeManager.shared.currentSize.sizeIdForVariant(.large)
             }
-            if let url = NSURL(string: photo.imageLinkFor(size: sizeId).url) {
-                imageView.af_setImageWithURL(url)
-            }
+            
+            let url = photo.imageURLFor(sizeId: sizeId)
+            imageView.af_setImageWithURL(url)
         }
     }
     

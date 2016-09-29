@@ -9,19 +9,19 @@
 import Foundation
 import ObjectMapper
 
+/// A model defining the response for the photo endpoint request
 class PhotoResponse: Mappable {
     
+    // The photos returned by the enpoint for the specified parameters.
     var photos: [Photo]?
-    var totalItems: Int?
+    
+    // The current page of the response.
     var currentPage: Int?
     
-    required init?(_ map: Map){
-        
-    }
+    required init?(_ map: Map) {}
     
     func mapping(map: Map) {
         photos <- map["photos"]
-        totalItems <- map["total_items"]
         currentPage <- map["current_page"]
     }
 }

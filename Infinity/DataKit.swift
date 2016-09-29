@@ -11,14 +11,26 @@ import Alamofire
 import AlamofireImage
 import AlamofireObjectMapper
 
+// The consumer key
 private let kConsumerKey = "7B86VYOjohPpneSrQ0lyAsyD02D0mYM0D2f5UNcl"
+
+// the api url
 private let kAPIurl = "https://api.500px.com/v1/"
 
+
+/// The network layer.
 struct DataKit {
     
+    
+    /// Returns the response from the given endpoint. Currently only supports the `photos` endpoint.
+    ///
+    /// - parameter endPoint:   The endpoint to request.
+    /// - parameter completion: The response of the request.
     static func get(endPoint: EndPoint, completion: (photos: [Photo], currentPage: Int) -> ()) {
         
+        // Default number of items.
         let numberOfItems = 40
+        
         var sizeIds: [Int] = []
         var pageNumber: Int = 0
         

@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+/// A protocol defining the requirements for an object to contain an image.
 protocol ImageContaining {
     var imageView: UIImageView { get set }
 }

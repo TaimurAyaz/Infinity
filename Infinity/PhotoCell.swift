@@ -9,12 +9,12 @@
 import UIKit
 import AlamofireImage
 
+/// The cell for `PhotoViewController`
 class PhotoCell: GalleryCell {
-
+    
+    // Make sure we fade in from the image already shown in the cell. Use a blank image otherwise.
     override func configure(withPhoto photo: Photo, sizeId: Int, fadeFromBlank: Bool) {
-        let imageLink = photo.imageLinkFor(size: sizeId)
-        if let url = NSURL(string: imageLink.url) {
-            imageView.af_setImageWithURL(url, placeholderImage: fadeFromBlank ? UIImage() : imageView.image, imageTransition: .CrossDissolve(0.3))
-        }
+        let url = photo.imageURLFor(sizeId: sizeId)
+        imageView.af_setImageWithURL(url, placeholderImage: fadeFromBlank ? UIImage() : imageView.image, imageTransition: .CrossDissolve(0.3))
     }
 }

@@ -9,8 +9,10 @@
 import UIKit
 import AlamofireImage
 
+// The cell for `GalleryViewController`.
 class GalleryCell: UICollectionViewCell, PhotoCellConfigurating, ImageContaining {
     
+    // The image view for the cell.
     var imageView: UIImageView = {
         let view = UIImageView(frame: .zero)
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -37,10 +39,9 @@ class GalleryCell: UICollectionViewCell, PhotoCellConfigurating, ImageContaining
         NSLayoutConstraint.activateConstraints(constraints)
     }
     
+    // Make sure we always fade in from blank
     func configure(withPhoto photo: Photo, sizeId: Int, fadeFromBlank: Bool) {
-        let imageLink = photo.imageLinkFor(size: sizeId)
-        if let url = NSURL(string: imageLink.url) {
-            imageView.af_setImageWithURL(url, placeholderImage:UIImage(), imageTransition: .CrossDissolve(0.3))
-        }
+        let url = photo.imageURLFor(sizeId: sizeId)
+        imageView.af_setImageWithURL(url, placeholderImage:UIImage(), imageTransition: .CrossDissolve(0.3))
     }
 }

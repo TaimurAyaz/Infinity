@@ -71,10 +71,8 @@ extension CollectionManager: UICollectionViewDataSource {
             
             // Preload large size photo for previewing
             if PhotoSizeManager.shared.currentSize == .cropped {
-                let imageLink = items[indexPath.row].imageLinkFor(size: PhotoSizeManager.shared.currentSize.sizeIdForVariant(.large))
-                if let url = NSURL(string: imageLink.url) {
-                    ImageDownloader.defaultInstance.downloadImage(URLRequest: NSURLRequest(URL: url), completion: nil)
-                }
+                let url = items[indexPath.row].imageURLFor(sizeId: PhotoSizeManager.shared.currentSize.sizeIdForVariant(.large))
+                ImageDownloader.defaultInstance.downloadImage(URLRequest: NSURLRequest(URL: url), completion: nil)
             }
         }
         return cell

@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+/// The presentation animator for presenting `PhotoViewController`
 class PhotoPresentedAnimationController: NSObject, UIViewControllerAnimatedTransitioning {
     
     func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {

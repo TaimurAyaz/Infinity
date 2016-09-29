@@ -8,7 +8,14 @@
 
 import Foundation
 
+/// An extension on collection type.
 extension CollectionType {
+    
+    /// A method that builds a dictionary from a given collection.
+    ///
+    /// - parameter transform: Used to specify keys and their corresponding values.
+    ///
+    /// - returns: A newly created dictionary.
     func toDictionary<K, V>
         (transform:(element: Self.Generator.Element) -> (key: K, value: V)?) -> [K : V] {
         var dictionary = [K : V]()
